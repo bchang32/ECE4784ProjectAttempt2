@@ -112,7 +112,7 @@ subplot(1,2,1)
 plot(t,Vm)
 ylabel('Volts (mV)')
 xlabel('Seconds (mS)')
-Title('Voltage over Time')
+Title('Membrane Voltage over Time')
 
 subplot(1,2,2)
 plot(t,gK*(n.^4),t,gNa*(m.^3).*h)
