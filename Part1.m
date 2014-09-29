@@ -124,7 +124,7 @@ plot(t,gK*(n.^4),t,gNa*(m.^3).*h)
 legend('Potassium','Sodium')
 xlabel('time ms')
 ylabel('Conductance, mS')
-
+Title('Conductance over time')
 
 
 
