@@ -108,16 +108,17 @@ end
 
 Vm=Vm-70;
 
+subplot(1,2,1)
 plot(t,Vm)
 ylabel('Volts (mV)')
 xlabel('Seconds (mS)')
 Title('Voltage over Time')
 
-
-% plot(t,gK*(n.^4),t,gNa*(m.^3).*h)
-% legend('Potassium','Sodium')
-% xlabel('time ms')
-% ylabel('Conductance, mS')
+subplot(1,2,2)
+plot(t,gK*(n.^4),t,gNa*(m.^3).*h)
+legend('Potassium','Sodium')
+xlabel('time ms')
+ylabel('Conductance, mS')
 
 
 

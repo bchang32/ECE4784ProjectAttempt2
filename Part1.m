@@ -111,13 +111,15 @@ Vm=Vm-70;
 %This is to plot it and make it look pretty without the +- .003 noise. I
 %get small deviations but I believe this is due to noise and matlab's
 %rounding
-% plot(t,Vm)
-% ylabel('Volts (mV)')
-% xlabel('Seconds (mS)')
-% axis([0,100,-100,100])
-% Title('Votage over Time')
 
+subplot(1,2,1)
+plot(t,Vm)
+ylabel('Volts (mV)')
+xlabel('Seconds (mS)')
+axis([0,100,-100,100])
+Title('Votage over Time')
 
+subplot(1,2,2);
 plot(t,gK*(n.^4),t,gNa*(m.^3).*h)
 legend('Potassium','Sodium')
 xlabel('time ms')
